@@ -1,0 +1,54 @@
+.grid-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "section section"
+    "article1 article3"
+    "article1 article4"
+    "article2 article4"
+    ;
+}
+
+.h-layout {
+    grid-area: header;
+    border: 2px solid blue
+}
+
+.n-layout{
+    grid-area: nav;
+    border: 2px solid red
+}
+
+.s-layout{
+    grid-area: section;
+    background-color: black;
+    border: 2px solid orange
+}
+
+.a1-layout{
+    grid-area: article1;
+    border: 2px solid green
+}
+
+.a2-layout{
+    grid-area: article2;
+    border: 2px solid black
+}
+
+.a3-layout{
+    grid-area: article3;
+    border: 2px solid rgb(255, 0, 85)
+}
+
+.a4-layout{
+    grid-area: article4;
+    border: 2px solid rgb(0, 247, 255)
+}
+
+.a5-layout{
+    grid-area: article5;
+    border: 2px solid purple}
