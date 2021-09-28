@@ -1,3 +1,7 @@
+*{
+    text-decoration: none; color: black;
+}
+
 .grid-layout {
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr;
@@ -21,7 +25,7 @@
 
 .n-layout{
     grid-area: nav;
-    border: 2px solid red
+    border: 2px solid red;
 }
 
 .s-layout{
@@ -38,7 +42,7 @@
 
 .a2-layout{
     grid-area: article2;
-    border: 2px solid black
+    border: 2px solid black;
 }
 
 .a3-layout{
