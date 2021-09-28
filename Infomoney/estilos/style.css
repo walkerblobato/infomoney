@@ -1,21 +1,21 @@
 .grid-layout {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
     grid-template-areas: 
-    "header header"
-    "nav nav"
-    "section section"
-    "article1 article3"
-    "article1 article4"
-    "article2 article4"
+    "header header header"
+    "nav nav nav"
+    "section section section"
+    "article1 article3 article6"
+    "article1 article4 article7"
+    "article2 article5 article8"
     ;
 }
 
 .h-layout {
     grid-area: header;
-    border: 2px solid blue
+    border: 2px solid blue;
 }
 
 .n-layout{
@@ -25,8 +25,9 @@
 
 .s-layout{
     grid-area: section;
+    color: white;
     background-color: black;
-    border: 2px solid orange
+    border: 2px solid orange;
 }
 
 .a1-layout{
@@ -41,7 +42,7 @@
 
 .a3-layout{
     grid-area: article3;
-    border: 2px solid rgb(255, 0, 85)
+    border: 2px solid rgb(58, 61, 56)
 }
 
 .a4-layout{
@@ -52,3 +53,15 @@
 .a5-layout{
     grid-area: article5;
     border: 2px solid purple}
+
+.a6-layout{
+    grid-area: article6;
+    border: 2px solid rgb(119, 128, 0)}
+
+.a7-layout{
+    grid-area: article7;
+    border: 2px solid rgb(241, 6, 85)}
+
+.a8-layout{
+    grid-area: article8;
+    border: 2px solid rgb(151, 142, 129)}
