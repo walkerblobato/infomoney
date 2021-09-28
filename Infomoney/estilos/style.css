@@ -16,6 +16,7 @@
 .h-layout {
     grid-area: header;
     border: 2px solid blue;
+    margin: auto;
 }
 
 .n-layout{
