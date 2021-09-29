@@ -33,9 +33,9 @@
 
 .s-layout{
     grid-area: section;
+    /*border: 2px solid orange;*/
     color: white;
     background-color: black; 
-    border: 2px solid orange;
     height: 50px;    
 }
 
@@ -47,7 +47,7 @@
 
 .a2-layout{
     grid-area: article2;
-    border: 2px solid black
+    border: 2px solid black;
 }
 
 .a3-layout{
