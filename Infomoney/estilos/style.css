@@ -1,8 +1,13 @@
+*{
+    font-family: "Helvetica Neue","Helvetica Neue LT Pro",Helvetica,Arial,sans-serif;
+    font-size: 1rem;  
+}
+
 .grid-layout {
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 10px;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    gap: 5px;
     grid-template-areas: 
     "header header header"
     "nav nav nav"
@@ -10,30 +15,34 @@
     "article1 article3 article6"
     "article1 article4 article7"
     "article2 article5 article8"
-    ;
 }
 
 .h-layout {
     grid-area: header;
-    border: 2px solid blue;
-    margin: auto;
+    /*border: 2px solid blue;
+    /*margin: auto*/;
 }
 
 .n-layout{
     grid-area: nav;
-    border: 2px solid red
+    /*border: 2px solid red;*/
+    background-color: rgb(249, 249, 249);
+    text-align: center;
+    height: 50px;    
 }
 
 .s-layout{
     grid-area: section;
     color: white;
-    background-color: black;
+    background-color: black; 
     border: 2px solid orange;
+    height: 50px;    
 }
 
 .a1-layout{
     grid-area: article1;
-    border: 2px solid green
+    border: 2px solid green;
+    background-image: url(../imagens/acoes-mercado-bolsa-baixa-queda-3.jpg);
 }
 
 .a2-layout{
@@ -53,16 +62,80 @@
 
 .a5-layout{
     grid-area: article5;
-    border: 2px solid purple}
+    border: 2px solid purple
+}
 
 .a6-layout{
     grid-area: article6;
-    border: 2px solid rgb(119, 128, 0)}
+    border: 2px solid rgb(119, 128, 0)
+}
 
 .a7-layout{
     grid-area: article7;
-    border: 2px solid rgb(241, 6, 85)}
+    border: 2px solid rgb(241, 6, 85)
+}
 
 .a8-layout{
     grid-area: article8;
-    border: 2px solid rgb(151, 142, 129)}
+    border: 2px solid rgb(151, 142, 129)
+}
+
+.logo1{
+    /*ajustar tamanho da logo*/
+    width: 250px;
+    height: 45px;
+    /*centralizar logo*/
+    margin: auto;
+    display: block;
+}
+.menu{
+    /*transpor lista*/
+    display: inline-flex;   
+}
+
+.lista{
+    /*centralizar lista*/
+    margin: 0px 10px 10px 20px;
+}
+
+.linkblack{
+    /*Retirar marcadores de link*/
+    text-decoration: none; 
+    color: black;
+}
+
+.ações{
+    /*tipo de mascadores da lista (nenhum marcado escolhido)*/
+    list-style-type: none;
+    display: inline-flex; 
+    margin: 20px 20px 20px 20px;
+}
+
+.lista2{
+    /*centralizar lista*/
+    margin: 0px 15px 0px 15px;
+    font-size: 12px;
+}
+
+.linkwhite{
+    text-decoration: none; 
+    color: white;
+    font-size: 11px;
+    /*Fonte em negrito*/
+    font-weight: bold;
+}
+
+.font-perc{
+    color: rgb(168, 54, 54);
+    font-size: 11px;
+}
+
+.font-perc2{
+    color: rgb(29, 177, 122);
+    font-size: 11px;
+}
+
+.logo2 {
+    margin: auto;
+    display: block;
+}
