@@ -6,7 +6,7 @@
 .grid-layout {
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 0.15fr 0.1fr 0.1fr 0.4fr 0.5fr;
     gap: 5px;
     grid-template-areas: 
     "header header header"
@@ -15,6 +15,7 @@
     "article1 article3 article6"
     "article1 article4 article7"
     "article2 article5 article8"
+    "article2 article5 article9"
 }
 
 .h-layout {
@@ -42,42 +43,65 @@
 .a1-layout{
     grid-area: article1;
     border: 2px solid green;
-    background-image: url(../imagens/acoes-mercado-bolsa-baixa-queda-3.jpg);
+    background-image: url(../imagens/minerio-de-ferro.jpg);
+    width: 754px;
+    height: 503px;
 }
 
 .a2-layout{
     grid-area: article2;
     border: 2px solid black;
+    width: 754px;
+    height: 150px;
 }
 
 .a3-layout{
     grid-area: article3;
-    border: 2px solid rgb(58, 61, 56)
+    border: 2px solid rgb(58, 61, 56);
+    width: 250px;
+    height: 150px;
 }
 
 .a4-layout{
     grid-area: article4;
-    border: 2px solid rgb(0, 247, 255)
+    border: 2px solid rgb(0, 247, 255);
+    width: 250px;
+    height: 150px;
 }
 
 .a5-layout{
     grid-area: article5;
-    border: 2px solid purple
+    border: 2px solid purple;
+    width: 250px;
+    height: 150px;
 }
 
 .a6-layout{
     grid-area: article6;
-    border: 2px solid rgb(119, 128, 0)
+    border: 2px solid rgb(119, 128, 0);
+    width: 300px;
+    height: 120px;
 }
 
 .a7-layout{
     grid-area: article7;
-    border: 2px solid rgb(241, 6, 85)
+    border: 2px solid rgb(241, 6, 85);
+    width: 300px;
+    height: 120px;
 }
 
 .a8-layout{
     grid-area: article8;
-    border: 2px solid rgb(151, 142, 129)
+    border: 2px solid rgb(151, 142, 129);
+    width: 300px;
+    height: 120px;
+}
+
+.a9-layout{
+    grid-area: article9;
+    border: 2px solid rgb(255, 4, 4);
+    width: 300px;
+    height: 120px;
 }
 
 .logo1{
@@ -90,18 +114,31 @@
 }
 .menu{
     /*transpor lista*/
-    display: inline-flex;   
+    display: inline-flex; 
 }
 
 .lista{
     /*centralizar lista*/
     margin: 0px 10px 10px 20px;
+    font-size: 12px;
+}
+
+.link1{
+    /*Retirar marcadores de link*/
+    text-decoration: none; 
+    color: black; 
+    font-size: 14px;
+    font-family: "Helvetica Neue","Helvetica Neue LT Pro",Helvetica,Arial,sans-serif;
 }
 
 .linkblack{
-    /*Retirar marcadores de link*/
     text-decoration: none; 
-    color: black;
+    color: black;   
+}
+
+/*Sombra azul ao passar mouse no link*/
+.linkblack:hover{
+    color: rgb(0, 162, 255)
 }
 
 .ações{
@@ -123,6 +160,7 @@
     font-size: 11px;
     /*Fonte em negrito*/
     font-weight: bold;
+    border-radius: 100%
 }
 
 .font-perc{
