@@ -131,6 +131,10 @@
     font-family: "Helvetica Neue","Helvetica Neue LT Pro",Helvetica,Arial,sans-serif;
 }
 
+.link1:hover{
+    color: rgb(0, 162, 255)
+}
+
 .linkblack{
     text-decoration: none; 
     color: black;   
