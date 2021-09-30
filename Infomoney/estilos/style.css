@@ -112,7 +112,7 @@ body {
     width: 1280px;
     margin: auto;
     display: grid;
-    grid-template-columns: 72% 28%;
+    grid-template-columns: 70% 30%;
     margin-top: 8px;
 }
 
@@ -156,7 +156,7 @@ body {
 
 .mais-noticias i {
     color: rgb(0, 145, 255);
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .noticias{
@@ -170,7 +170,7 @@ body {
 }
 
 .text-paragraph{
-    font-size: 19px;
+    font-size: 20px;
     margin-top: 0px;
     
 }
