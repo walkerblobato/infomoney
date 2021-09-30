@@ -9,104 +9,10 @@ body {
     padding: 0;
 }
 
-.grid-layout {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr;
-    grid-template-rows: 0.15fr 0.1fr 0.1fr 0.4fr 0.5fr;
-    gap: 5px;
-    grid-template-areas: 
-    "header header header"
-    "nav nav nav"
-    "section section section"
-    "article1 article3 article6"
-    "article1 article4 article7"
-    "article2 article5 article8"
-    "article2 article5 article9"
-}
-
 .h-layout {
     grid-area: header;
     /*border: 2px solid blue;
     /*margin: auto*/;
-}
-
-.n-layout{
-    grid-area: nav;
-    /*border: 2px solid red;*/
-    background-color: rgb(249, 249, 249);
-    text-align: center;
-    height: 50px;    
-}
-
-.s-layout{
-    grid-area: section;
-    /*border: 2px solid orange;*/
-    color: white;
-    background-color: black; 
-    height: 50px;    
-}
-
-.a1-layout{
-    grid-area: article1;
-    border: 2px solid green;
-    background-image: url(../imagens/minerio-de-ferro.jpg);
-    height: 320px;
-}
-
-.a2-layout{
-    grid-area: article2;
-    border: 2px solid black;
-    width: 754px;
-    height: 150px;
-}
-
-.a3-layout{
-    grid-area: article3;
-    border: 2px solid rgb(58, 61, 56);
-    width: 250px;
-    height: 150px;
-}
-
-.a4-layout{
-    grid-area: article4;
-    border: 2px solid rgb(0, 247, 255);
-    width: 250px;
-    height: 150px;
-}
-
-.a5-layout{
-    grid-area: article5;
-    border: 2px solid purple;
-    width: 250px;
-    height: 150px;
-}
-
-.a6-layout{
-    grid-area: article6;
-    border: 2px solid rgb(119, 128, 0);
-    width: 300px;
-    height: 120px;
-}
-
-.a7-layout{
-    grid-area: article7;
-    border: 2px solid rgb(241, 6, 85);
-    width: 300px;
-    height: 120px;
-}
-
-.a8-layout{
-    grid-area: article8;
-    border: 2px solid rgb(151, 142, 129);
-    width: 300px;
-    height: 120px;
-}
-
-.a9-layout{
-    grid-area: article9;
-    border: 2px solid rgb(255, 4, 4);
-    width: 300px;
-    height: 120px;
 }
 
 .logo1{
@@ -117,6 +23,15 @@ body {
     margin: auto;
     display: block;
 }
+
+.n-layout{
+    grid-area: nav;
+    /*border: 2px solid red;*/
+    background-color: rgb(249, 249, 249);
+    text-align: center;
+    height: 50px;    
+}
+
 .menu{
     /*transpor lista*/
     display: inline-flex; 
@@ -140,14 +55,12 @@ body {
     color: rgb(0, 162, 255)
 }
 
-.linkblack{
-    text-decoration: none; 
-    color: black;   
-}
-
-/*Sombra azul ao passar mouse no link*/
-.linkblack:hover{
-    color: rgb(0, 162, 255)
+.s-layout{
+    grid-area: section;
+    /*border: 2px solid orange;*/
+    color: white;
+    background-color: black; 
+    height: 50px;    
 }
 
 .ações{
@@ -186,19 +99,21 @@ body {
     font-size: 11px;
 }
 
-.logo2 {
-    margin: auto;
-    display: block;
+.linkblack{
+    text-decoration: none; 
+    color: black;   
 }
 
+.linkblack:hover{
+    color: rgb(0, 162, 255)
+}
 
-/** */
 .master {
     width: 1280px;
     margin: auto;
     display: grid;
     grid-template-columns: 70% 30%;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .master .master-esquerda {
@@ -206,15 +121,23 @@ body {
   grid-template-columns: 65% 35%;
 }
 
-.master .master-direita {
+.a1-layout{
+    grid-area: article1;
+    background-image: url(../imagens/minerio-de-ferro.jpg);
+    height: 320px;
+}
+
+.master.master-direita {
     height: 300px;
     background-color: pink;
 }
 
 .mais-noticias {
+    /*Tirando espaçamento ao lado esquerdo*/
     padding: 0;
+    list-style-type: none;
 }
 
 .mais-noticias i {
-    color: cyan;
+    color: rgb(0, 145, 255);
 }
