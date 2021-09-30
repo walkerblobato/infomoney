@@ -1,6 +1,12 @@
-*{
+* {
     font-family: "Helvetica Neue","Helvetica Neue LT Pro",Helvetica,Arial,sans-serif;
     font-size: 1rem;  
+}
+
+/* resetar os estilo padrão do navegador */
+body {
+    margin: 0;
+    padding: 0;
 }
 
 .grid-layout {
@@ -44,8 +50,7 @@
     grid-area: article1;
     border: 2px solid green;
     background-image: url(../imagens/minerio-de-ferro.jpg);
-    width: 754px;
-    height: 503px;
+    height: 320px;
 }
 
 .a2-layout{
@@ -149,7 +154,11 @@
     /*tipo de mascadores da lista (nenhum marcado escolhido)*/
     list-style-type: none;
     display: inline-flex; 
-    margin: 20px 20px 20px 20px;
+    margin: 0;
+}
+
+.ações li {
+    margin-top: 14px;
 }
 
 .lista2{
@@ -180,4 +189,24 @@
 .logo2 {
     margin: auto;
     display: block;
+}
+
+
+/** */
+.master {
+    width: 1280px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin-top: 20px;
+}
+
+.master .master-esquerda {
+  display: grid;
+  grid-template-columns: 65% 35%;
+}
+
+.master .master-direita {
+    height: 300px;
+    background-color: pink;
 }
