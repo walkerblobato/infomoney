@@ -10,15 +10,17 @@ body {
 }
 
 .h-layout {
-    grid-area: header;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    padding-top: 8px;
     /*border: 2px solid blue;
     /*margin: auto*/;
 }
 
 .logo1{
     /*ajustar tamanho da logo*/
-    width: 250px;
-    height: 45px;
+    width: 240px;
+    height: 48px;
     /*centralizar logo*/
     margin: auto;
     display: block;
@@ -29,7 +31,7 @@ body {
     /*border: 2px solid red;*/
     background-color: rgb(249, 249, 249);
     text-align: center;
-    height: 50px;    
+    height: 45px;    
 }
 
 .menu{
@@ -60,18 +62,13 @@ body {
     /*border: 2px solid orange;*/
     color: white;
     background-color: black; 
-    height: 50px;    
+    height: 40px;    
 }
 
-.ações{
+.acoes{
     /*tipo de mascadores da lista (nenhum marcado escolhido)*/
     list-style-type: none;
     display: inline-flex; 
-    margin: 0;
-}
-
-.ações li {
-    margin-top: 14px;
 }
 
 .lista2{
@@ -124,11 +121,10 @@ body {
 
 .master.master-direita {
     height: 300px;
-    background-color: pink;
+    margin-top: 5px;
 }
 
 .a1-layout{
-    grid-area: article1;
     background-image: url(../imagens/minerio-de-ferro.jpg);
     height: 320px;
 }
@@ -165,12 +161,56 @@ body {
 
 .text-title{
     font-size: 14px;
-    font-weight: lighter;
+    color: gray;
     margin-bottom: 5px;
+    margin-top: 0px;
 }
 
 .text-paragraph{
     font-size: 20px;
+    margin-top: 0px;   
+}
+
+.linha{
+    color: rgb(163, 163, 163);
+}
+
+.text-notice{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.divisao{
+    display: grid;
+    grid-template-columns: 25% 75%; 
+    height: 90px;
+}
+
+.text-paragraph2{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
     margin-top: 0px;
-    
+}
+
+.foto-noticia1{
+    background-image: url(../imagens/follow-on-oferta-subsequente-de-acoes.jpg);
+    height: 72px;
+    width: 72px;
+}
+
+.foto-noticia2{
+    background-image: url(../imagens/football-673206_1920.jpg);
+    height: 72px;
+    width: 72px;
+}
+
+.foto-noticia3{
+    background-image: url(../imagens/pexels-andrew-neel-trabalho-remoto-computador.jpg);
+    height: 72px;
+    width: 72px;
+}
+
+.espacamento{
+    margin-left: 7px;
 }
