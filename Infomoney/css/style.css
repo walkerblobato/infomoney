@@ -62,7 +62,10 @@ body {
     /*border: 2px solid orange;*/
     color: white;
     background-color: black; 
-    height: 40px;    
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
 }
 
 .acoes{
@@ -103,6 +106,10 @@ body {
 
 .linkblack:hover{
     color: rgb(0, 162, 255)
+}
+
+.adjust-image{
+    margin-top: 3px;
 }
 
 .master {
@@ -148,6 +155,11 @@ body {
 .mais-noticias {
     padding: 0;
     list-style-type: none;
+    font-size: 15px;
+}
+
+.spacing-lists{
+    margin-bottom: 5px;
 }
 
 .mais-noticias i {
@@ -197,18 +209,24 @@ body {
     background-image: url(../imagens/follow-on-oferta-subsequente-de-acoes.jpg);
     height: 72px;
     width: 72px;
+    /*Ajustar tamanho da foto*/
+    background-size: cover;
 }
 
 .foto-noticia2{
     background-image: url(../imagens/football-673206_1920.jpg);
     height: 72px;
     width: 72px;
+    /*Ajustar tamanho da foto*/
+    background-size: cover;
 }
 
 .foto-noticia3{
     background-image: url(../imagens/pexels-andrew-neel-trabalho-remoto-computador.jpg);
     height: 72px;
     width: 72px;
+    /*Ajustar tamanho da foto*/
+    background-size: cover;
 }
 
 .espacamento{
