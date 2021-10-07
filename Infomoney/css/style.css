@@ -77,6 +77,13 @@ body {
     display: inline-flex; 
 }
 
+/*Tirar marcador apenas do primeiro elemento da lista*/
+.lista-image-marcador{
+    /*centralizar lista*/
+    margin: 0px 10px 10px 20px;
+    font-size: 12px;
+    list-style-type: none;
+}
 .lista{
     /*centralizar lista*/
     margin: 0px 10px 10px 20px;
@@ -89,6 +96,11 @@ body {
     color: black; 
     font-size: 14px;
     font-family: "Helvetica Neue","Helvetica Neue LT Pro",Helvetica,Arial,sans-serif;
+}
+
+.arrow{
+    height: 13px;
+    padding-right: 10px;
 }
 
 .link1:hover{
@@ -112,10 +124,30 @@ body {
     display: inline-flex; 
 }
 
+ul.acoes{
+    margin: 0;
+    padding-left: 0;
+}
+
+/*Colocando linhas entre ações*/
+ul.acoes li{
+    padding: 13px 10px 13px 0px;
+    font-size: 12px;
+    border-right: solid 1px rgba(51, 51, 51, 0.753);
+}
+
+ul.acoes li:first-child {
+    padding-left: 0;
+}
+
+ul.acoes li:last-child{
+    border-right: none;
+}
+
 .lista2{
     /*centralizar lista*/
     margin: 0px 15px 0px 15px;
-    font-size: 12px;
+    font-size: 11px;
 }
 
 .linkwhite{
@@ -130,19 +162,20 @@ body {
 .font-perc{
     color: rgb(168, 54, 54);
     font-size: 11px;
+    margin-left: 3px;
 }
 
-.font-perc2{
+.font-perc2 {
     color: rgb(29, 177, 122);
     font-size: 11px;
 }
 
-.linkblack{
+.linkblack {
     text-decoration: none; 
     color: black;   
 }
 
-.linkblack:hover{
+.linkblack:hover {
     color: rgb(0, 162, 255)
 }
 
@@ -167,18 +200,32 @@ body {
 .master.master-direita {
     height: 300px;
     margin-top: 5px;
+    
 }
 
-.a1-layout{
+/*criando zoom imagem (cria uma animação)*/
+@keyframes nossaanimacao {
+    from {
+        background-size: 100%;
+    }
+    to {
+        background-size: 130%;
+    }
+}
+.a1-layout {
     background-image: url(../imagens/minerio-de-ferro.jpg);
     height: 320px;
+    /* configurando zoom imagem*/
+    background-size: 100%;
+    background-position: center;
 }
 
-.a1-layout:hover{
-   transform: scale(1.05);
+/*Chamando zoom imagem*/
+.a1-layout:hover {
+    animation: nossaanimacao 0.4 forwards;
 }
 
-.title-image{
+.title-image {
     font-size: 14px;
     font-weight: lighter;
     padding-top: 180px;
@@ -187,7 +234,7 @@ body {
     
 }
 
-.text-image{
+.text-image {
     font-size: 24px;
     font-weight: bold;
     margin-left: 40px;
