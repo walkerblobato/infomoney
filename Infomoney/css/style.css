@@ -12,9 +12,7 @@ body {
 .h-layout {
     display: grid;
     grid-template-columns: 11% 78% 11%;
-    padding-top: 8px;
-    /*border: 2px solid blue;
-    /*margin: auto*/;
+    margin-top: 20px;
 }
 
 .menu{
@@ -60,8 +58,7 @@ body {
 }
 
 .search{
-    padding-left: 10px;
-    padding-top: 10px;
+    padding: 10px;
 }
 
 .n-layout{
@@ -323,3 +320,97 @@ ul.acoes li:last-child{
 .espacamento{
     margin-left: 7px;
 }
+
+.rodape{
+    background-color: rgb(18, 18, 18);
+    padding: 50.5px;
+    margin-top: 50px
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    width: 100%;
+}
+
+.words{
+    list-style-type: none;
+    padding: 0px;
+}
+
+.linkrodape{
+    text-decoration: none;
+    color: white;
+}
+
+.linkcabecalho{
+    color: #6c757d;
+    text-decoration: none;
+}
+
+.linkcabecalho:hover{
+    color: white;
+}
+
+.text-rodape{
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.text-cabecalho{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.logo-rodape{
+    width: 140px;
+    height: 28px;
+    padding-top: 80px;
+    margin-bottom: 24px;
+}
+
+.list-rodape{
+    list-style-type: none;
+    display: inline-flex;
+    padding: 0px 0px 040px;
+    margin: 0;
+}
+
+.list-rodape li{
+    padding-right: 15px;
+}
+
+.list-redessociais{
+    list-style-type: none;
+    display: inline-flex;
+    padding: 0px 0px 40px;
+    margin: 0;
+}
+
+.list-redessociais li{
+    margin-left: 12px;
+}
+
+.list-redessociais li:first-child{
+    margin-left: 0;
+}
+
+.link-redessocias{
+    color: rgba(255, 255, 255, 0.9);
+}      
+
+.image-googlePlay{
+    background-image: url(../imagens/google-play-badge.webp);
+    width: 135px;
+    height: 40px;
+    background-size: cover;
+}
+
+.image-appStore{
+    background-image: url(../imagens/app-store-badge.webp);
+    width: 120px;
+    height: 40px;
+    background-size: cover;
+}
+
