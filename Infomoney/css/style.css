@@ -12,11 +12,11 @@ body {
 .h-layout {
     display: grid;
     grid-template-columns: 11% 78% 11%;
-    margin-top: 20px;
+    margin: 20px 0px 12px 0px;
 }
 
 .menu{
-    margin: 20px;   
+    margin: 10px 20px;  
 }
 
 .link-logo{
@@ -35,19 +35,19 @@ body {
 .actions{
     display: grid;
     grid-template-columns: 50% 50%;
-    gap: 20px;
-    margin: 10px 10px;
+    text-align: center;
+    
 }
 
 .enter{
     background: white;
-    /*Imortante da prioridade a essa propriedade*/
-    border: none !important;
+    /*Importante da prioridade a essa propriedade*/
+    border: none /*important!*/;
     box-shadow: none;
     color: #666;
     font-weight: 500;
     font-size: 14px;
-    cursor: pointer;
+    cursor: pointer; /*Faz a mão para clicar em um icone*/
     height: 35px;
     width: 70px;
 }
@@ -62,25 +62,26 @@ body {
 }
 
 .n-layout{
-    grid-area: nav;
-    /*border: 2px solid red;*/
     background-color: rgb(249, 249, 249);
     text-align: center;
-    height: 45px;    
+    height: 40px;   
 }
 
 .acessos{
     /*transpor lista*/
-    display: inline-flex; 
+    display: inline-flex;
+    padding: 0;
 }
+
 
 /*Tirar marcador apenas do primeiro elemento da lista*/
 .lista-image-marcador{
     /*centralizar lista*/
-    margin: 0px 10px 10px 20px;
     font-size: 12px;
     list-style-type: none;
+    margin-right: 10px;
 }
+
 .lista{
     /*centralizar lista*/
     margin: 0px 10px 10px 20px;
@@ -90,9 +91,8 @@ body {
 .link1{
     /*Retirar marcadores de link*/
     text-decoration: none; 
-    color: black; 
+    color: black;
     font-size: 14px;
-    font-family: "Helvetica Neue","Helvetica Neue LT Pro",Helvetica,Arial,sans-serif;
 }
 
 .arrow{
@@ -106,12 +106,12 @@ body {
 
 .s-layout{
     grid-area: section;
-    /*border: 2px solid orange;*/
     color: white;
     background-color: black; 
     height: 40px;
+    /*Centralizando com flex*/
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between; 
 }
 
@@ -124,6 +124,9 @@ body {
 ul.acoes{
     margin: 0;
     padding-left: 0;
+    /*Para linha que separar ações não quebrar na torca de layouts*/
+    display: flex;
+    align-items: stretch;
 }
 
 /*Colocando linhas entre ações*/
@@ -131,6 +134,9 @@ ul.acoes li{
     padding: 13px 10px 13px 0px;
     font-size: 12px;
     border-right: solid 1px rgba(51, 51, 51, 0.753);
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
 }
 
 ul.acoes li:first-child {
@@ -174,10 +180,6 @@ ul.acoes li:last-child{
 
 .linkblack:hover {
     color: rgb(0, 162, 255)
-}
-
-.adjust-image{
-    margin-top: 3px;
 }
 
 .master {
@@ -338,17 +340,17 @@ ul.acoes li:last-child{
     padding: 0px;
 }
 
-.linkrodape{
-    text-decoration: none;
-    color: white;
-}
-
 .linkcabecalho{
     color: #6c757d;
     text-decoration: none;
 }
 
 .linkcabecalho:hover{
+    color: white;
+}
+
+.linkrodape{
+    text-decoration: none;
     color: white;
 }
 
@@ -373,27 +375,44 @@ ul.acoes li:last-child{
 .list-rodape{
     list-style-type: none;
     display: inline-flex;
-    padding: 0px 0px 040px;
+    padding: 0 0 40px;
     margin: 0;
+    gap: 15px;
 }
 
-.list-rodape li{
-    padding-right: 15px;
+.list-rodape li a{
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
 }
 
 .list-redessociais{
     list-style-type: none;
     display: inline-flex;
-    padding: 0px 0px 40px;
+    padding: 0 0 40px;
     margin: 0;
 }
 
 .list-redessociais li{
+    /*Alinhando ao centro logos redes sociais*/
     margin-left: 12px;
+    text-align: center;
 }
 
 .list-redessociais li:first-child{
     margin-left: 0;
+}
+
+.list-redessociais li a{
+    /*Contruindo cícurlo de fundo nas logos das redes sociais*/
+    display: block;
+    background-color: rgba(65, 65, 65, 0.568);
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    line-height: 1.5;
 }
 
 .link-redessocias{
@@ -413,4 +432,3 @@ ul.acoes li:last-child{
     height: 40px;
     background-size: cover;
 }
-
