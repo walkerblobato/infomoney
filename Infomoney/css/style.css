@@ -16,7 +16,7 @@ body {
 }
 
 .menu{
-    margin: 10px 20px;  
+    padding: 12px 20px;  
 }
 
 .menu a{
@@ -43,26 +43,39 @@ body {
     
 }
 
-.login button {
+.login{
     background: white;
-    /*Importante da prioridade a essa propriedade*/
-    border: none /*important!*/;
-    box-shadow: none;
-    color: #666;
-    font-weight: 500;
-    font-size: 14px;
-    cursor: pointer; /*Faz a mão para clicar em um icone*/
-    height: 35px;
-    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding-right: 8px;
 }
 
-.login button:hover{
+.login div button {
+    border: none;
+    box-shadow: none;
+    font-weight: 500;
+    font-size: 13px;
+    cursor: pointer; /*Faz a mão para clicar em um icone*/
+    height: 35px;
+    width: 35px;
+}
+
+.login div a img{
+    width: 20px;
+    height: 20px;
+    padding-top: 8px;
+    margin-right: 0;
+}
+
+.login:hover{
     background-color: #f0f0f0;
      
 }
 
 .search{
-    padding: 10px;
+    padding: 12px;
 }
 
 .search a{
