@@ -45,33 +45,35 @@ body {
 
 .login{
     background: white;
-    display: flex;
+    /*Diferença de flex para inline-flex*/
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     height: 40px;
     padding-right: 8px;
 }
 
+.login div a img{
+    width: 20px;
+    height: 20px;
+    padding-top: 5px;
+    margin-right: 0;
+}
+
 .login div button {
     border: none;
     box-shadow: none;
+    background-color: white;
+    cursor: pointer; /*Faz a mão para clicar em um icone*/
     font-weight: 500;
     font-size: 13px;
-    cursor: pointer; /*Faz a mão para clicar em um icone*/
     height: 35px;
     width: 35px;
 }
 
-.login div a img{
-    width: 20px;
-    height: 20px;
-    padding-top: 8px;
-    margin-right: 0;
-}
-
 .login:hover{
-    background-color: #f0f0f0;
-     
+    background-color: #f0f0f0; 
+    cursor: pointer; /*Faz a mão para clicar em um icone*/ 
 }
 
 .search{
