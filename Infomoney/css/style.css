@@ -46,9 +46,10 @@ body {
 .login{
     background: white;
     /*Diferença de flex para inline-flex*/
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     height: 40px;
     padding-right: 8px;
 }
@@ -300,7 +301,7 @@ ul.acoes li a{
 }
 
 .linha{
-    margin-top: 5px;
+    border-top: 1px solid rgba(177, 177, 177, 0.397);
     margin-bottom: 15px;
 }
 
@@ -315,7 +316,7 @@ ul.acoes li a{
     height: 90px;
 }
 
-.text-paragraph2{
+.espacamento a h2{
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
@@ -348,6 +349,21 @@ ul.acoes li a{
 
 .espacamento{
     margin-left: 7px;
+}
+
+.other-news{
+    list-style-type: none;
+}
+
+.other-news li p{
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+
+.other-news li a h2{
+    margin-top: 0px;
 }
 
 .rodape{
