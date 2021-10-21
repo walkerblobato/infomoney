@@ -73,18 +73,6 @@ body {
     margin-right: 0;
 }
 
-/*
-.login div button {
-    border: none;
-    box-shadow: none;
-    background-color: transparent;
-    cursor: pointer; /*Faz a mão para clicar em um icone
-    font-weight: 500;
-    font-size: 13px;
-    height: 35px;
-    width: 35px;
-}*/
-
 .login:hover{
     background-color: #f0f0f0; 
     cursor: pointer; /*Faz a mão para clicar em um icone*/ 
