@@ -45,13 +45,25 @@ body {
 
 .login{
     background: white;
-    /*Diferença de flex para inline-flex*/
+    text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 40px;
     padding-right: 8px;
+    border: 0;
+}
+
+.login img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.login span{
+    color: gray;
+    font-size: 13px;
 }
 
 .login div a img{
@@ -61,16 +73,17 @@ body {
     margin-right: 0;
 }
 
+/*
 .login div button {
     border: none;
     box-shadow: none;
     background-color: transparent;
-    cursor: pointer; /*Faz a mão para clicar em um icone*/
+    cursor: pointer; /*Faz a mão para clicar em um icone
     font-weight: 500;
     font-size: 13px;
     height: 35px;
     width: 35px;
-}
+}*/
 
 .login:hover{
     background-color: #f0f0f0; 
@@ -117,11 +130,6 @@ body {
 .n-layout ul li a:hover{
     color: rgb(0, 162, 255)
 }
-/* Qual das duas formas devo fazer, pois só tenho uma img
-.n-layout ul li a img{
-    height: 13px;
-    padding-right: 10px;
-}*/
 
 .arrow{
     height: 13px;
@@ -160,7 +168,6 @@ ul.acoes li{
     border-right: solid 1px rgba(51, 51, 51, 0.753);
     display: flex;
     align-items: center;
-    /*Alinhar ações. NÃO ENTENDI A MONTAGEM DESSA ESTRUTURA*/
     padding-right: 20px;
     margin: 0px 10px;
 }
