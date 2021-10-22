@@ -53,6 +53,7 @@ body {
     height: 40px;
     padding-right: 8px;
     border: 0;
+    transition: all ease 0.3s;
 }
 
 .login img{
