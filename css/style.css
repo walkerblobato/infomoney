@@ -225,8 +225,9 @@ ul.acoes li a{
     background-image: url(../imagens/minerio-de-ferro.jpg);
     height: 320px;
     /* configurando zoom imagem*/
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
+
 }
 
 /*Chamando zoom imagem*/
@@ -453,6 +454,14 @@ ul.acoes li a{
     color: rgba(255, 255, 255, 0.9);
 }  
 
+.list-rodape2{
+    list-style-type: none;
+    display: inline-flex;
+    padding: 0 0 40px;
+    margin: 0;
+    gap: 15px;
+}
+
 .image-googlePlay{
     background-image: url(../imagens/google-play-badge.webp);
     width: 135px;
@@ -475,9 +484,9 @@ ul.acoes li a{
     .n-layout{
         display: none;
     }
-    
-    /*Por quê não tirou?*/
-    .acoes li:nth-child(3){
+
+    /*Por quê não sai a borda?*/
+    .acooea li:nth-child(3){
         border-right: none;
     }
 
@@ -489,7 +498,7 @@ ul.acoes li a{
         display: none;
     }
 
-    .acoes li:nth-child(6)){
+    .acoes li:nth-child(6){
         display: none;
     }
 
@@ -517,5 +526,15 @@ ul.acoes li a{
         display: grid;
         grid-template-columns: 100%;
         margin: 0 16px;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list-rodape{
+        display: flex;
+        flex-direction: column;
     }
 }
