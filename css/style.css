@@ -9,25 +9,26 @@ body {
     padding: 0;
 }
 
-.h-layout {
+header {
     display: grid;
     grid-template-columns: 11% 78% 11%;
     margin: 20px 0px 12px 0px;
 }
 
-.menu{
+header .menu{
     padding: 12px 20px;  
 }
 
-.menu a{
+header .menu a{
     color: gray;
+    transition: all ease 0.5s;
 }
 
-.menu a:hover{
+header .menu a:hover{
     color: black;
 }
 
-.logo1{
+header .logo1{
     /*ajustar tamanho da logo*/
     width: 240px;
     height: 48px;
@@ -36,14 +37,14 @@ body {
     display: block;
 }
 
-.actions{
+header .actions{
     display: grid;
     grid-template-columns: 50% 50%;
     text-align: center;
     
 }
 
-.login{
+header .login{
     background: white;
     text-decoration: none;
     display: flex;
@@ -53,74 +54,76 @@ body {
     height: 40px;
     padding-right: 8px;
     border: 0;
-    transition: all ease 0.3s;
+    transition: all ease 0.5s;
 }
 
-.login img{
+header img{
     width: 20px;
     height: 20px;
     margin-right: 5px;
 }
 
-.login span{
+header span{
     color: gray;
     font-size: 13px;
 }
 
-.login div a img{
+header .login a{
     width: 20px;
     height: 20px;
     padding-top: 5px;
     margin-right: 0;
 }
 
-.login:hover{
+header .login:hover{
     background-color: #f0f0f0; 
     cursor: pointer; /*Faz a mão para clicar em um icone*/ 
 }
 
-.search{
+header .search{
     padding: 12px;
 }
 
-.search a{
+header .search a{
     color: gray;
+    transition: all ease 0.5s;
 }
 
-.search a:hover{
+header .search a:hover{
     color: black;
 }
 
-.n-layout{
+nav{
     background-color: rgb(249, 249, 249);
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 40px;   
 }
 
-.n-layout ul {
+nav ul {
     /*transpor lista*/
     display: inline-flex;
     font-size: 12px;
     list-style-type: none;
 }
 
-.n-layout ul li span{
+nav span{
     margin: 0 10px;
 }
 
-.n-layout ul li a{
+nav a{
     /*Retirar marcadores de link*/
     text-decoration: none; 
     color: black;
     font-size: 14px;
 }
 
-.n-layout ul li a:hover{
+nav a:hover{
     color: rgb(0, 162, 255)
 }
 
-.arrow{
+nav .arrow{
     height: 13px;
     padding-right: 10px;
 }
@@ -137,7 +140,7 @@ body {
 }
 
 /*Fazer dessa forma ou igual está no nav*/
-.acoes{
+section .acoes{
     /*tipo de mascadores da lista (nenhum marcado escolhido)*/
     list-style-type: none;
     display: inline-flex; 
@@ -178,19 +181,19 @@ ul.acoes li a{
     font-weight: bold;
 }
 
-.font-perc{
+section .font-perc{
     color: rgb(168, 54, 54);
     font-size: 11px;
     margin-left: 2px;
 }
 
-.font-perc2 {
+section .font-perc2 {
     color: rgb(29, 177, 122);
     font-size: 11px;
     margin-left: 2px;
 }
 
-.master {
+main {
     width: 100%;
     margin: auto;
     display: grid;
@@ -198,13 +201,13 @@ ul.acoes li a{
     margin-top: 5px;
 }
 
-.master .master-esquerda {
+main .master-esquerda {
     display: grid;
     grid-template-columns: 64% 36%;
     margin: 0 16px;
 }
 
-.linkwhite{
+main .linkwhite{
     text-decoration: none; 
     color: white;
     font-size: 11px;
@@ -221,7 +224,7 @@ ul.acoes li a{
         background-size: 130%;
     }
 }
-.a1-layout {
+main .a1-layout {
     background-image: url(../imagens/minerio-de-ferro.jpg);
     height: 320px;
     /* configurando zoom imagem*/
@@ -231,12 +234,12 @@ ul.acoes li a{
 }
 
 /*Chamando zoom imagem*/
-.a1-layout:hover {
+main .a1-layout:hover {
     animation: nossaanimacao 0.4 forwards;
 }
 
 /*Definir essa class ou fazer com a1-layout p?*/
-.title-image {
+main .title-image {
     font-size: 14px;
     font-weight: lighter;
     padding-top: 180px;
@@ -245,82 +248,82 @@ ul.acoes li a{
     
 }
 
-.text-image {
+main .text-image {
     font-size: 24px;
     font-weight: bold;
     margin-left: 40px;
     margin-top: 0px;
 }
 
-.mais-noticias {
+main .mais-noticias {
     padding: 0;
     list-style-type: none;
     font-size: 15px;
 }
 
-.mais-noticias li{
+main .mais-noticias li{
     margin-bottom: 10px;
 }
 
-.mais-noticias i {
+main .mais-noticias i {
     color: rgb(0, 145, 255);
     font-size: 13px;
 }
 
-.mais-noticias li a samp{
+main .mais-noticias li a samp{
     font-size: 14px;
     font-weight: bold;
 }
 
-.linkblack {
+main .linkblack {
     text-decoration: none; 
     color: black;   
 }
 
-.linkblack:hover {
+main .linkblack:hover {
     color: rgb(0, 162, 255)
 }
 
 
-.noticias{
+main .noticias{
     list-style-type: none;
 }
 
-.noticias li p{
+main .noticias p{
     font-size: 14px;
     color: gray;
     margin-bottom: 5px;
     margin-top: 0px;
 }
 
-.noticias li a h2{
+main .noticias h2{
     font-size: 20px;
     margin-top: 0px;
 }
 
-.linha{
+main .linha{
     border-top: 1px solid rgba(177, 177, 177, 0.397);
     margin-bottom: 15px;
 }
 
-.master.master-direita {
+main .master.master-direita {
     height: 300px;
 }
 
-.divisao{
+main .divisao{
     display: grid;
     grid-template-columns: 25% 75%; 
     height: 90px;
 }
 
-.espacamento a h2{
+main .espacamento a h2{
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
     margin-top: 0px;
 }
 
-.foto-noticia1{
+main .foto-noticia1{
     background-image: url(../imagens/follow-on-oferta-subsequente-de-acoes.jpg);
     height: 72px;
     width: 72px;
@@ -328,7 +331,7 @@ ul.acoes li a{
     background-size: cover;
 }
 
-.foto-noticia2{
+main .foto-noticia2{
     background-image: url(../imagens/football-673206_1920.jpg);
     height: 72px;
     width: 72px;
@@ -336,7 +339,7 @@ ul.acoes li a{
     background-size: cover;
 }
 
-.foto-noticia3{
+main .foto-noticia3{
     background-image: url(../imagens/pexels-andrew-neel-trabalho-remoto-computador.jpg);
     height: 72px;
     width: 72px;
@@ -344,73 +347,73 @@ ul.acoes li a{
     background-size: cover;
 }
 
-.espacamento{
+main .espacamento{
     margin-left: 7px;
 }
 
-.other-news{
+main .other-news{
     list-style-type: none;
 }
 
-.other-news li p{
+main .other-news p{
     font-size: 14px;
     color: gray;
     margin-bottom: 5px;
     margin-top: 0px;
 }
 
-.other-news li a h2{
+main .other-news h2{
     margin-top: 0px;
 }
 
-.rodape{
+footer{
     background-color: rgb(18, 18, 18);
     padding: 50.5px;
     margin-top: 50px
 }
 
-.container{
+footer .container{
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     width: 100%;
 }
 
-.container ul{
+footer .container ul{
     list-style-type: none;
     padding: 0px;
 }
 
-.container ul li{ 
+footer .container li{ 
     margin-top: 10px;
 }
 
 /*Não consegui fazer first-child para tirar essas classes*/
-.linkcabecalho{
+footer .linkcabecalho{
     color: #6c757d;
     text-decoration: none;
     font-size: 12px;
     font-weight: 400;
 }
 
-.linkcabecalho:hover{
+footer .linkcabecalho:hover{
     color: white;
 }
 
-.linkrodape{
+footer .linkrodape{
     text-decoration: none;
     color: white;
     font-size: 12px;
     font-weight: 400;
 }
 
-.logo-rodape{
+footer .logo-rodape{
     width: 140px;
     height: 28px;
     padding-top: 80px;
     margin-bottom: 24px;
 }
 
-.list-rodape{
+footer .list-rodape{
     list-style-type: none;
     display: inline-flex;
     padding: 0 0 40px;
@@ -418,31 +421,31 @@ ul.acoes li a{
     gap: 15px;
 }
 
-.list-rodape li a{
+footer .list-rodape a{
     font-size: 12px;
     font-weight: 600;
     text-decoration: none;
     color: white;
 }
 
-.list-redessociais{
+footer .list-redessociais{
     list-style-type: none;
     display: inline-flex;
     padding: 0 0 40px;
     margin: 0;
 }
 
-.list-redessociais li{
+footer .list-redessociais li{
     /*Alinhando ao centro logos redes sociais*/
     margin-left: 12px;
     text-align: center;
 }
 
-.list-redessociais li:first-child{
+footer .list-redessociais li:first-child{
     margin-left: 0;
 }
 
-.list-redessociais li a{
+footer .list-redessociais a{
     /*Contruindo cícurlo de fundo nas logos das redes sociais*/
     display: block;
     background-color: rgba(65, 65, 65, 0.568);
@@ -454,7 +457,7 @@ ul.acoes li a{
     color: rgba(255, 255, 255, 0.9);
 }  
 
-.list-rodape2{
+footer .list-rodape2{
     list-style-type: none;
     display: inline-flex;
     padding: 0 0 40px;
@@ -462,14 +465,14 @@ ul.acoes li a{
     gap: 15px;
 }
 
-.image-googlePlay{
+footer .image-googlePlay{
     background-image: url(../imagens/google-play-badge.webp);
     width: 135px;
     height: 40px;
     background-size: cover;
 }
 
-.image-appStore{
+footer .image-appStore{
     background-image: url(../imagens/app-store-badge.webp);
     width: 120px;
     height: 40px;
@@ -477,44 +480,44 @@ ul.acoes li a{
 }
 
 @media (max-width: 640px){
-    .search{
+    header .search{
         display: none;
     }
 
-    .n-layout{
+    nav{
         display: none;
     }
 
     /*Por quê não sai a borda?*/
-    .acooea li:nth-child(3){
+    section .acooea li:nth-child(3){
         border-right: none;
     }
 
-    .acoes li:nth-child(4){
+    section .acoes li:nth-child(4){
         display: none;
     }
 
-    .acoes li:nth-child(5){
+    section .acoes li:nth-child(5){
         display: none;
     }
 
-    .acoes li:nth-child(6){
+    section .acoes li:nth-child(6){
         display: none;
     }
 
-    .acoes li:nth-child(7){
+   section .acoes li:nth-child(7){
         display: none;
     }
 
-    .noticias{
+    main .noticias{
         padding: 0;
     }
 
-    .other-news{
+    main .other-news{
         padding: 15px;
     }
 
-    .master {
+    main {
         width: 100%;
         margin: auto;
         display: grid;
@@ -522,18 +525,17 @@ ul.acoes li a{
         grid-template-columns: 100%;
     }
     
-    .master .master-esquerda {
+    main .master-esquerda {
         display: grid;
         grid-template-columns: 100%;
         margin: 0 16px;
     }
 
-    .container{
-        display: flex;
-        flex-direction: column;
+    footer .container {
+        display: block;
     }
 
-    .list-rodape{
+    footer .list-rodape{
         display: flex;
         flex-direction: column;
     }
