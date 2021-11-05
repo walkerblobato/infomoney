@@ -227,10 +227,9 @@ main .linkwhite{
 main .a1-layout {
     background-image: url(../imagens/minerio-de-ferro.jpg);
     height: 320px;
-    /* configurando zoom imagem*/
+    /*configurando zoom imagem*/
     background-size: cover;
     background-position: center;
-
 }
 
 /*Chamando zoom imagem*/
@@ -243,9 +242,8 @@ main .title-image {
     font-size: 14px;
     font-weight: lighter;
     padding-top: 180px;
-    margin-left: 40px;
-    margin-bottom: 0px;
-    
+    margin-left: 40px;   
+    margin-bottom: 0; 
 }
 
 main .text-image {
@@ -480,7 +478,8 @@ footer .image-appStore{
 }
 
 @media (max-width: 640px){
-    header .search{
+
+    header .login{
         display: none;
     }
 
@@ -489,7 +488,7 @@ footer .image-appStore{
     }
 
     /*Por quê não sai a borda?*/
-    section .acooea li:nth-child(3){
+    section .acoes li:nth-child(3){
         border-right: none;
     }
 
@@ -531,6 +530,25 @@ footer .image-appStore{
         margin: 0 16px;
     }
 
+    main .title-image {
+        font-size: 14px;
+        font-weight: lighter;
+        padding-top: 120px;
+        margin-left: 20px; 
+        margin-bottom: 0;
+    }
+    
+    main .text-image {
+        font-size: 24px;
+        font-weight: bold;
+        margin-left: 20px;
+        margin-top: 0px;
+    }
+
+    footer {
+        padding-left: 20px;
+    }
+
     footer .container {
         display: block;
     }
@@ -539,4 +557,9 @@ footer .image-appStore{
         display: flex;
         flex-direction: column;
     }
+
+    footer .list-redessociais a{
+        /*Contruindo cícurlo de fundo nas logos das redes sociais*/
+        width: 15px;
+    }  
 }
